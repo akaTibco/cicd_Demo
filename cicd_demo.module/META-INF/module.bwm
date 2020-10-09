@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_JvIHoAlYEeu96-_OKw_v4g" targetNamespace="http://tns.tibco.com/bw/composite/cicd_demo.module" name="cicd_demo.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_NzAMwAlYEeu96-_OKw_v4g" name="resource" promote="ComponentProcess/resource">
+    <sca:interface.wsdl xmi:id="_NzFFQAlYEeu96-_OKw_v4g" interface="http://xmlns.example.com/20201008071938PLT#wsdl.interface(resource)" scaext:wsdlLocation="../Processes/cicd_demo/module/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_NzKk0AlYEeu96-_OKw_v4g" name="RestService" path="/resource" docBasePath="http://localhost:7777/cicd_demo.module" docResourcePath="Resource" basePath="/" connector="cicd_demo.module.Resource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/cicd_demo.module.Process-Resource.json">
+      <operation xmi:id="_NzLy8AlYEeu96-_OKw_v4g" operationName="get" nickname="get-resource" httpMethod="GET" notes="getResource" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_8MuAoAlZEeu96-_OKw_v4g">
+          <parameterMapping xmi:id="_8MuAoQlZEeu96-_OKw_v4g" parameterName="name" parameterType="Query" dataType="string"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_NzU84AlYEeu96-_OKw_v4g"/>
+      <advancedConfig xmi:id="_NzKk0QlYEeu96-_OKw_v4g" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_NzMaAAlYEeu96-_OKw_v4g" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_KKq0IAlYEeu96-_OKw_v4g" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KK42kAlYEeu96-_OKw_v4g" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KK9vEAlYEeu96-_OKw_v4g" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KLCnkAlYEeu96-_OKw_v4g" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KLHgEAlYEeu96-_OKw_v4g" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_KLMYkAlYEeu96-_OKw_v4g" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_KLQC8AlYEeu96-_OKw_v4g" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_J6Y8cAlYEeu96-_OKw_v4g" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_J6Y8cQlYEeu96-_OKw_v4g" processName="cicd_demo.module.Process"/>
+    <sca:service xmi:id="_Ny8iYAlYEeu96-_OKw_v4g" name="resource">
+      <sca:interface.wsdl xmi:id="_Ny9JcAlYEeu96-_OKw_v4g" interface="http://xmlns.example.com/20201008071938PLT#wsdl.interface(resource)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

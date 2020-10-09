@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<completeReportDTO>
+    <moduleResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="testSuiteResultDTO">
+        <codeCoverage xsi:type="processCoverageDTO">
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Mapper</activityCoverage>
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Start</activityCoverage>
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">End</activityCoverage>
+            <moduleName>cicd_demo.module</moduleName>
+            <processName>cicd_demo.module.SubProcess</processName>
+            <transitionCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">StartToEnd</transitionCoverage>
+            <transitionCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">MapperToEnd</transitionCoverage>
+        </codeCoverage>
+        <moduleInfo>
+            <appName>cicd_demo</appName>
+            <appVersion>1.0</appVersion>
+            <moduleName>cicd_demo.module</moduleName>
+            <moduleVersion>1.0.0.qualifier</moduleVersion>
+        </moduleInfo>
+        <testSetResult xsi:type="testSetResultDTO">
+            <packageName>cicd_demo.module</packageName>
+            <processName>cicd_demo.module.SubProcess</processName>
+            <testCaseResult xsi:type="testCaseResultDTO">
+                <assertionFailure>1</assertionFailure>
+                <assertionResult xsi:type="assertionResultDTO">
+                    <activityName>End</activityName>
+                    <activityOutput>&lt;tns:MapperInput xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1597294030614"&gt;&lt;op&gt;"s"&lt;/op&gt;&lt;/tns:MapperInput&gt;</activityOutput>
+                    <assertionStatus>failed</assertionStatus>
+                    <instanceId>bw0a100</instanceId>
+                    <message>BX-200006: Assertion error @End</message>
+                </assertionResult>
+                <assertions>1</assertions>
+                <assertionsRun>0</assertionsRun>
+                <processFailures>0</processFailures>
+                <testCaseFile>/cicd_demo.module/Tests/cicd_demo.module1.bwt</testCaseFile>
+            </testCaseResult>
+        </testSetResult>
+        <showFailureDetails>false</showFailureDetails>
+    </moduleResult>
+</completeReportDTO>
