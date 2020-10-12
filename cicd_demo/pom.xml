@@ -13,16 +13,16 @@
   <properties>
     <skipTests>false</skipTests>
     <project.type>None</project.type>
-    <bw.Home>\bwce\2.5</bw.Home>
+    <bw.Home>/bwce/2.5</bw.Home>
     <failIfNoTests>false</failIfNoTests>
-    <tibco.Home>D:\TIBCOWork\TibcoHome</tibco.Home>
+    <tibco.Home>/opt/tibco</tibco.Home>
   </properties>
   <build>
     <plugins>
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.7.0</version>
+        <version>2.7.1</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
@@ -32,7 +32,7 @@
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.7.0</version>
+        <version>2.7.1</version>
       </plugin>
     </plugins>
   </reporting>

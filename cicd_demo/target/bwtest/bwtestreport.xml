@@ -20,16 +20,20 @@
             <packageName>cicd_demo.module</packageName>
             <processName>cicd_demo.module.SubProcess</processName>
             <testCaseResult xsi:type="testCaseResultDTO">
-                <assertionFailure>1</assertionFailure>
+                <assertionFailure>0</assertionFailure>
                 <assertionResult xsi:type="assertionResultDTO">
                     <activityName>End</activityName>
-                    <activityOutput>&lt;tns:MapperInput xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1597294030614"&gt;&lt;op&gt;Joh&lt;/op&gt;&lt;/tns:MapperInput&gt;</activityOutput>
-                    <assertionStatus>failed</assertionStatus>
+                    <activityOutput></activityOutput>
+                    <assertionMode>Primitive</assertionMode>
+                    <assertionStatus>passed</assertionStatus>
+                    <endElementNameTag>&lt;/op&gt;</endElementNameTag>
+                    <goldInput>&lt;op&gt;John&lt;/op&gt;</goldInput>
                     <instanceId>bw0a100</instanceId>
-                    <message>BX-200006: Assertion error @End</message>
+                    <message></message>
+                    <startElementNameTag>&lt;op&gt;</startElementNameTag>
                 </assertionResult>
                 <assertions>1</assertions>
-                <assertionsRun>0</assertionsRun>
+                <assertionsRun>1</assertionsRun>
                 <processFailures>0</processFailures>
                 <testCaseFile>/cicd_demo.module/Tests/cicd_demo.module1.bwt</testCaseFile>
             </testCaseResult>
