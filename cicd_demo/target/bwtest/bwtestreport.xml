@@ -23,7 +23,7 @@
                 <assertionFailure>1</assertionFailure>
                 <assertionResult xsi:type="assertionResultDTO">
                     <activityName>End</activityName>
-                    <activityOutput>&lt;tns:MapperInput xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1597294030614"&gt;&lt;op&gt;"s"&lt;/op&gt;&lt;/tns:MapperInput&gt;</activityOutput>
+                    <activityOutput>&lt;tns:MapperInput xmlns:tns="http://www.tibco.com/namespaces/tnt/plugins/generalactivities/mapper/1597294030614"&gt;&lt;op&gt;Joh&lt;/op&gt;&lt;/tns:MapperInput&gt;</activityOutput>
                     <assertionStatus>failed</assertionStatus>
                     <instanceId>bw0a100</instanceId>
                     <message>BX-200006: Assertion error @End</message>
