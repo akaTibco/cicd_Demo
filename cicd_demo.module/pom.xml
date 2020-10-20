@@ -13,7 +13,11 @@
   <properties>
     <sonar.sources>.</sonar.sources>
   </properties>
-  <dependencies>
+  
+    <!--
+Removing this because maven throws errors
+
+    <dependencies>
     <dependency>
       <groupId>com.tibco.plugins</groupId>
       <artifactId>com.tibco.bw.palette.shared</artifactId>
@@ -21,6 +25,8 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+-->
+    
   <build>
     <sourceDirectory>src</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>
