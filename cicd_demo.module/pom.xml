@@ -13,11 +13,7 @@
   <properties>
     <sonar.sources>.</sonar.sources>
   </properties>
-  
-    <!--
-Removing this because maven throws errors
-
-    <dependencies>
+  <dependencies>
     <dependency>
       <groupId>com.tibco.plugins</groupId>
       <artifactId>com.tibco.bw.palette.shared</artifactId>
@@ -25,8 +21,6 @@ Removing this because maven throws errors
       <scope>provided</scope>
     </dependency>
   </dependencies>
--->
-    
   <build>
     <sourceDirectory>src</sourceDirectory>
     <outputDirectory>target/classes</outputDirectory>
@@ -34,8 +28,16 @@ Removing this because maven throws errors
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.7.1</version>
+        <version>2.7.0</version>
         <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.26.1</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
       </plugin>
     </plugins>
   </build>
