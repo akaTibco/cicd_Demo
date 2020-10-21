@@ -12,11 +12,11 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <docker.env.property.file>/home/tibco/git/cicd_demo/cicd_demo/docker-host-env-dev.properties</docker.env.property.file>
-    <bw.Home>/bwce/2.5</bw.Home>
     <project.type>Docker</project.type>
-    <failIfNoTests>false</failIfNoTests>
+    <bw.Home>/bwce/2.5</bw.Home>
+    <docker.env.property.file>/home/tibco/git/cicd_demo/cicd_demo/docker-host-env-dev.properties</docker.env.property.file>
     <docker.property.file>docker-dev.properties</docker.property.file>
+    <failIfNoTests>false</failIfNoTests>
     <tibco.Home>/home/tibco/Desktop/MultiCloud_Demo/BWCE_HOME</tibco.Home>
   </properties>
   <build>
