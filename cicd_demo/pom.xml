@@ -12,10 +12,11 @@
   <packaging>bwear</packaging>
   <properties>
     <skipTests>false</skipTests>
-    <project.type>Docker</project.type>
+    <docker.env.property.file>/home/tibco/git/cicd_demo/cicd_demo/docker-host-env-dev.properties</docker.env.property.file>
     <bw.Home>/bwce/2.5</bw.Home>
-    <docker.property.file>docker-dev.properties</docker.property.file>
+    <project.type>Docker</project.type>
     <failIfNoTests>false</failIfNoTests>
+    <docker.property.file>docker-dev.properties</docker.property.file>
     <tibco.Home>/home/tibco/Desktop/MultiCloud_Demo/BWCE_HOME</tibco.Home>
   </properties>
   <build>
@@ -23,7 +24,7 @@
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.7.0</version>
+        <version>2.7.1</version>
         <extensions>true</extensions>
       </plugin>
       <plugin>
@@ -41,6 +42,7 @@
         <configuration>
           <files>
             <file>${docker.property.file}</file>
+            <file>${docker.env.property.file}</file>
           </files>
         </configuration>
       </plugin>
@@ -73,6 +75,7 @@
               </build>
               <run>
                 <namingStrategy>alias</namingStrategy>
+                <envPropertyFile>${docker.env.property.file}</envPropertyFile>
               </run>
             </image>
           </images>
@@ -85,7 +88,7 @@
       <plugin>
         <groupId>com.tibco.plugins</groupId>
         <artifactId>bw6-maven-plugin</artifactId>
-        <version>2.7.0</version>
+        <version>2.7.1</version>
       </plugin>
     </plugins>
   </reporting>
