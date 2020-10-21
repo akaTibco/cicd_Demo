@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<completeReportDTO>
+    <moduleResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="testSuiteResultDTO">
+        <codeCoverage xsi:type="processCoverageDTO">
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Mapper</activityCoverage>
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">Start</activityCoverage>
+            <activityCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">End</activityCoverage>
+            <moduleName>cicd_demo.module</moduleName>
+            <processName>cicd_demo.module.SubProcess</processName>
+            <transitionCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">StartToEnd</transitionCoverage>
+            <transitionCoverage xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">MapperToEnd</transitionCoverage>
+        </codeCoverage>
+        <moduleInfo>
+            <appName>cicd_demo</appName>
+            <appVersion>1.0</appVersion>
+            <moduleName>cicd_demo.module</moduleName>
+            <moduleVersion>1.0.0.qualifier</moduleVersion>
+        </moduleInfo>
+        <testSetResult xsi:type="testSetResultDTO">
+            <packageName>cicd_demo.module</packageName>
+            <processName>cicd_demo.module.SubProcess</processName>
+            <testCaseResult xsi:type="testCaseResultDTO">
+                <assertionFailure>0</assertionFailure>
+                <assertionResult xsi:type="assertionResultDTO">
+                    <activityName>End</activityName>
+                    <activityOutput></activityOutput>
+                    <assertionMode>Primitive</assertionMode>
+                    <assertionStatus>passed</assertionStatus>
+                    <endElementNameTag>&lt;/op&gt;</endElementNameTag>
+                    <goldInput>&lt;op&gt;John&lt;/op&gt;</goldInput>
+                    <instanceId>bw0a100</instanceId>
+                    <message></message>
+                    <startElementNameTag>&lt;op&gt;</startElementNameTag>
+                </assertionResult>
+                <assertions>1</assertions>
+                <assertionsRun>1</assertionsRun>
+                <processFailures>0</processFailures>
+                <testCaseFile>/cicd_demo.module/Tests/cicd_demo.module1.bwt</testCaseFile>
+            </testCaseResult>
+        </testSetResult>
+        <showFailureDetails>false</showFailureDetails>
+    </moduleResult>
+</completeReportDTO>
