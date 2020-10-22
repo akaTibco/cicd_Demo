@@ -5,7 +5,7 @@
     "title" : "Resource",
     "description" : "Resource service"
   },
-  "host" : "localhost:8089",
+  "host" : "localhost:9082",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
